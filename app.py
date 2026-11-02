@@ -5,7 +5,7 @@ def classify(usage_percent):
     """Turn a disk usage percentage into a status."""
     if usage_percent < 0 or usage_percent > 100:
         raise ValueError("usage must be between 0 and 100")
-    if usage_percent >= 95:
+    if usage_percent >= 90:
         return "CRITICAL"
     if usage_percent >= 75:
         return "WARNING"
